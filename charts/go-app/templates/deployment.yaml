@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "go-app.fullname" . }}
+  namespace: {{ .Values.nameSpace }}
   labels:
     {{- include "go-app.labels" . | nindent 4 }}
 spec:
