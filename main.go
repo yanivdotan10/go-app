@@ -7,7 +7,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	title := "Allcloud DOE Demo app canary develop"
+	title := "Allcloud DOE Demo app canary develop v1"
 
 	from := ""
 	if r.URL != nil {
